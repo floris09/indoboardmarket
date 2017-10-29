@@ -1,12 +1,12 @@
 <%= form_for @product do |f| %>
   <div class="form-group">
     <label>Location</label>
-    <%= f.select :location, [["Bali", "bali"], ["Sumatra", "sumatra"], ["Lombok", "lombok"]], id: "location", prompt: "Select Location", class: "form-control" %>
+    <%= f.select :location_id, [["Bali", @bali], ["Sumatra", @sumatra], ["Lombok", @lombok]], id: "location", prompt: "Select Location", class: "form-control" %>
   </div>
 
   <div class="form-group">
     <label>Category</label>
-    <%= f.select :category, [["Surfboards", "surfboards"], ["Bodyboards", "bodyboards"], ["Skateboards", "skateboards"], ["Swimfins", "swimfins"], ["Fins", "fins"], ["Leashes", "leashes"], ["Tailpads", "tailpads"], ["Boardbags", "boardbags"], ["Clothing", "clothing"], ["Wetsuits", "wetsuits"], ["Cameras", "cameras"], ["Others", "others"]], id: "category", prompt: "Select category", class:"form-control" %>
+    <%= f.select :category_id, [["Surfboards", @surfboards], ["Bodyboards", @bodyboards], ["Skateboards", @skateboards], ["Swimfins", @swimfins], ["Fins", @fins], ["Leashes", @leashes], ["Tailpads", @tailpads], ["Boardbags", @boardbags], ["Clothing", @clothing], ["Wetsuits", @wetsuits], ["Cameras", @cameras], ["Others", @others]], id: "category", prompt: "Select category", class:"form-control" %>
   </div>
 
   <div class="form-group">
