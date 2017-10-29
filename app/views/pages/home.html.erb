@@ -1,1 +1,34 @@
-<h1>IndoBoardMarket</h1>
+<div class='container-fluid'>
+  <div class='row'>
+    <div class='col-md-6'>
+      <ul>
+        <% @products.each do |product| %>
+          <li>
+            <%= product.name %>
+            <%= product.price %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+    <div class='col-md-6'>
+      <ul>
+        <% @locations.each do |location| %>
+          <li>
+            <%= location.island %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='col-md-12'>
+      <ul>
+        <% @categories.each do |category| %>
+          <li>
+            <%= category.name %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
